@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :appointments, :path => "admin"
-  tet '/admin', to: 'appointments#admin'
+  get '/admin', to: 'appointments#admin'
   root 'appointments#admin'
 
   # The priority is based upon order of creation: first created -> highest priority.
