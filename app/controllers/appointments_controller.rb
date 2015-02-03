@@ -9,6 +9,7 @@ class AppointmentsController < ApplicationController
 
   def admin
     @appointments = Appointment.by_age
+  end
 
   # GET /appointments/1
   # GET /appointments/1.json
