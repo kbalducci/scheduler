@@ -8,7 +8,7 @@ class AppointmentsController < ApplicationController
   end
 
   def admin
-    @appointments = Appointment.by_age
+    @appointments = Appointment.by_age.by_state
   end
 
   # GET /appointments/1
