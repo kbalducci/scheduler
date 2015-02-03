@@ -56,4 +56,8 @@ module AppointmentsHelper
     ['Wyoming', 'WY']
   ]
 end
+
+    def importance_level
+      %w(High Low None)
+    end
 end

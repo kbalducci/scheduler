@@ -51,7 +51,7 @@
   </div>
   <div class="field">
     <%= f.label :importance %><br>
-    <%= f.text_field :importance %>
+    <%= f.select :importance, options_for_select(%w[High Low None]) %>
   </div>
   <div class="actions">
     <%= f.submit %>
